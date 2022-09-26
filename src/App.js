@@ -19,7 +19,7 @@ const defaultState = {
 // Reducer
 
 // Master Component
-const App = () => {
+const Tasks = (props) => {
   const [showEdit, setShowEdit] = useState(false);
   const [editTask, setEditTask] = useState({ id: null, task: null });
   const [input, setInput] = useState("");
@@ -59,7 +59,7 @@ const App = () => {
           />
         ) : null}
         {state.tasks
-          .filter((task) => task.completed !== true)
+          .filter((task) => task.completed === false)
           .map((task) => {
             return (
               <div
@@ -149,4 +149,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Tasks;
