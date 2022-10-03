@@ -6,6 +6,6 @@ COPY . todo
 
 RUN cd todo
 
-# RUN npm install
+RUN npm install
 
-# RUN npm start
+RUN npm start

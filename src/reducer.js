@@ -26,7 +26,6 @@ const reducer = (state, action) => {
       }
       return curtask;
     });
-    console.log(newTasks);
     return (state = {
       ...state,
       tasks: newTasks,
